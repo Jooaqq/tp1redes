@@ -1,0 +1,15 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Container from "../components/container.astro";
+import Sectionhead from "../components/sectionhead.astro";
+---
+
+<Layout title="Ronaldo">
+    <Container>
+        <Sectionhead>
+            <Fragment slot="title">Ronaldo</Fragment>
+            <Fragment slot="desc">En la liga de camellos.</Fragment>
+        </Sectionhead>
+        <img src="ronaldo.jpg" />
+    </Container>
+</Layout>
