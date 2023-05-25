@@ -5,37 +5,36 @@ import Card from "../components/Card.astro";
 
 <Layout title="Welcome.">
 	<main>
-		<h1><span class="text-gradient">welcome to messias page</span></h1>
-		<center><img src="/messi.jpg" /></center>
+		<center><h1>Welcome to Messias</h1></center>
+		<center><img src="/messi.jpg" width="400" height="700" /></center><br />
+
 		<ul>
 			<li>
-				<h2>Copa America</h2>
+				<center><h2>Trofeos</h2></center>
 			</li>
 			<li>
-				<h3>Finalissima</h3>
+				<p>Mundial</p>
 			</li>
 			<li>
-				<h4>Mundial</h4>
+				<p>Copa America</p>
 			</li>
 			<li>
-				<h5>Ligue 1</h5>
+				<p>Finalissima</p>
+			</li>
+			<li>
+				<p>Ligue 1</p>
 			</li>
 		</ul>
 	</main>
 
 	<style>
-		:root {
-			--astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
-		}
-
 		h1 {
-			margin: 2rem 0;
+			margin: 3rem 0;
 		}
 
 		main {
 			margin: auto;
-			padding: 1em;
-			max-width: 60ch;
+			padding: 3em;
 		}
 
 		@keyframes pulse {
@@ -46,29 +45,6 @@ import Card from "../components/Card.astro";
 			50% {
 				background-position-y: 80%;
 			}
-		}
-
-		.instructions {
-			line-height: 1.6;
-			margin: 1rem 0;
-			background: #4f39fa;
-			padding: 1rem;
-			border-radius: 0.4rem;
-			color: var(--color-bg);
-		}
-
-		.instructions code {
-			font-size: 0.875em;
-			border: 0.1em solid var(--color-border);
-			border-radius: 4px;
-			padding: 0.15em 0.25em;
-		}
-
-		.link-card-grid {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-			gap: 1rem;
-			padding: 0;
 		}
 	</style>
 </Layout>
