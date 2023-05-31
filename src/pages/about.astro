@@ -4,12 +4,11 @@ import Container from "../components/container.astro";
 import Sectionhead from "../components/sectionhead.astro";
 ---
 
-<Layout title="Ronaldo">
-    <Container>
-        <Sectionhead>
-            <Fragment slot="title">Ronaldo</Fragment>
-            <Fragment slot="desc">Leyenda portugesa</Fragment>
-        </Sectionhead>
-    </Container>
-    <center><img src="ronaldo.jpg" height="500" width="400" /></center>
-</Layout>
+<html>
+    <Layout title="Ronaldo" />
+    <main>
+        <p slot="title" class="center">Ronaldo</p>
+        <p slot="desc">Leyenda portugesa</p>
+        <center><img src="ronaldo.jpg" height="500" width="400" /></center>
+    </main>
+</html>
