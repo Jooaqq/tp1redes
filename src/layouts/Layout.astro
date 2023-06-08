@@ -11,61 +11,96 @@ const { title } = Astro.props as Props;
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<nav class="mx-auto max-w-7xl px-6 lg:px-8" aria-label="Top">
-			<div
-				id="navbar"
-				class="border-b border-indigo-500 py-6 lg:border-none"
-			>
-				<div class="flex items-center">
-					<a href="/">
-						<span class="sr-only">Astro Starter</span>
-						<img
-							src="pelota2.png"
-							width="100"
-							height="100"
-							alt="nose"
-						/>
-					</a>
-				</div>
+	<header>
+		<body>
+			<nav class="mx-auto max-w-7xl px-6 lg:px-8" aria-label="Top">
+				<div id="navbar" class="border-b border-indigo-500 py-6">
+					<div class="flex items-center">
+						<a href="/">
+							<img
+								src="pelota2.png"
+								width="100"
+								height="100"
+								alt="nose"
+							/>
+						</a>
+						<div id="burger">
+							<Hamburger />
+							<div>
+								<button class="relative group">
+									<div
+										class="relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all bg-slate-700 ring-0 ring-gray-300 hover:ring-8 group-focus:ring-4 ring-opacity-30 duration-200 shadow-md"
+									>
+										<div
+											class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden"
+										>
+											<div
+												class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-y-6 delay-100"
+											>
+											</div>
+											<div
+												class="bg-white h-[2px] w-7 rounded transform transition-all duration-300 group-focus:translate-y-6 delay-75"
+											>
+											</div>
+											<div
+												class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-y-6"
+											>
+											</div>
 
-				<div class="flex flex-wrap justify-center gap-x-6 py-4">
-					<a
-						href="/"
-						class="text-base font-medium text-black hover:text-indigo-100"
-						>Messi</a
-					>
-					<a
-						href="/about"
-						class="text-base font-medium text-black hover:text-indigo-100"
-						>Ronaldo</a
-					>
-					<a
-						href="/Nosotros"
-						class="text-base font-medium text-black hover:text-indigo-100"
-						>Nosotros
-					</a>
+											<div
+												class="absolute items-center justify-between transform transition-all duration-500 top-2.5 -translate-x-10 group-focus:translate-x-0 flex w-0 group-focus:w-12"
+											>
+												<div
+													class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45"
+												>
+												</div>
+												<div
+													class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45"
+												>
+												</div>
+											</div>
+										</div>
+									</div>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="flex flex-wrap justify-center gap-x-6 py-4">
+						<a
+							href="/"
+							class="text-base font-medium text-black hover:text-indigo-100"
+							>Messi</a
+						>
+						<a
+							href="/about"
+							class="text-base font-medium text-black hover:text-indigo-100"
+							>Ronaldo</a
+						>
+						<a
+							href="/Nosotros"
+							class="text-base font-medium text-black hover:text-indigo-100"
+							>Nosotros
+						</a>
+					</div>
 				</div>
-			</div>
-			<div id="burger"><Hamburger /></div>
-			<style>
-				#navbar {
-					display: flex;
-					flex-direction: row;
-					justify-content: space-between;
-					align-items: center;
-				}
-				#burger{
-				display: none;
-				}
-				@media (min-wit
-			</style>
-		</nav>
-	</body>
+				<style>
+					#header {
+						background-color: brown;
+					}
+					#navbar {
+						display: flex;
+						flex-direction: row;
+						justify-content: space-between;
+						align-items: center;
+					}
+					#burger {
+						display: hidden;
+						justify-content: space-between;
+					}
+				</style>
+			</nav>
+		</body>
+	</header>
+
+
 </html>
