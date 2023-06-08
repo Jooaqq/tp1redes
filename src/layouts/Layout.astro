@@ -67,7 +67,7 @@ const { title } = Astro.props as Props;
 					</div>
 					<div class="flex flex-wrap justify-center gap-x-6 py-4">
 						<a
-							href="/"
+							href="/" <i-- hola --
 							class="text-base font-medium text-black hover:text-indigo-100"
 							>Messi</a
 						>
@@ -85,16 +85,16 @@ const { title } = Astro.props as Props;
 				</div>
 				<style>
 					#header {
-						background-color: brown;
+						background-color: brown; /* color del fondo*/
 					}
 					#navbar {
-						display: flex;
-						flex-direction: row;
-						justify-content: space-between;
+						display: flex; /* ordena los elementos en el espacio disponible */
+						flex-direction: row; 
+						justify-content: space-between; /*ordena entre espacios el contenido*/
 						align-items: center;
 					}
 					#burger {
-						display: hidden;
+						display: hidden; /* esconde */
 						justify-content: space-between;
 					}
 				</style>
